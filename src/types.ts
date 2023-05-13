@@ -4,6 +4,5 @@ export interface RobotStructure {
   image: string;
   speed: number;
   strength: number;
-
   creation_date: string;
 }

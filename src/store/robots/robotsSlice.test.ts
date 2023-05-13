@@ -6,7 +6,7 @@ import {
   robotsReducer,
 } from "./robotsSlice";
 
-describe("Given a loadRobotsReducer reducer", () => {
+describe("Given a loadRobots reducer", () => {
   describe("When it receives an empty list of robots and a load tasks action with two robots", () => {
     test("Then it should return the list with two robots", () => {
       const currentRobots: RobotStructure[] = [];

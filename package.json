@@ -13,6 +13,7 @@
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
+    "@fontsource/righteous": "^4.5.7",
     "@reduxjs/toolkit": "^1.9.5",
     "axios": "^1.4.0",
     "jest-ts-webcompat-resolver": "^1.0.0",

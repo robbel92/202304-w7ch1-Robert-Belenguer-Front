@@ -1,5 +1,12 @@
+import Header from "./Header/Header";
+
 const App = (): JSX.Element => {
-  return <p>ROBOTS APP</p>;
+  return (
+    <>
+      <Header></Header>
+      <div className="container"></div>
+    </>
+  );
 };
 
 export default App;

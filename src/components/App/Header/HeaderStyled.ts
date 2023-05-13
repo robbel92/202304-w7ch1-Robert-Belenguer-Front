@@ -7,9 +7,10 @@ const HeaderStyled = styled.header`
   align-items: center;
   background-color: #95969c;
   color: white;
+  padding: 20px;
 
   .title {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 `;
 export default HeaderStyled;

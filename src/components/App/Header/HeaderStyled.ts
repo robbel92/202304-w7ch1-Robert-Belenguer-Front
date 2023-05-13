@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const HeaderStyled = styled.header`
+  font-family: ${(props) => props.theme.fonts.primary_title};
   display: flex;
   justify-content: space-around;
   align-items: center;

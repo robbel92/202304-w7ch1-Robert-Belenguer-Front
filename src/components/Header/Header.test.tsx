@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import Header from "./Header";
 import { ThemeProvider } from "styled-components";
-import theme from "../../../styles/theme/theme";
+import theme from "../../styles/theme/theme";
 
 describe("Given a Header component", () => {
   describe("When it was rendered", () => {

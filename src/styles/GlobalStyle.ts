@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: ${(props) => props.theme.fonts.primary_title} ,sans-serif;
   }
 
   h1,

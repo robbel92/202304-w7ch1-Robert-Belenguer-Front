@@ -1,10 +1,10 @@
-import { robotsMock } from "../../mocks/robotsMock";
-import RobotCard from "../RobotCard/RobotCard";
 import Header from "../Header/Header";
 import { useEffect } from "react";
 import { useApi } from "../../hooks/useApi";
 import { useAppDispatch } from "../../store";
 import { loadRobotsActionCreator } from "../../store/robots/robotsSlice";
+import RobotList from "../RobotsList/RobotsList";
+import { robotsMock } from "../../mocks/robotsMock";
 
 const App = (): JSX.Element => {
   const { getRobots } = useApi();
@@ -13,16 +13,15 @@ const App = (): JSX.Element => {
 
   useEffect(() => {
     (async () => {
-      const movies = await getRobots();
-      dispatch(loadRobotsActionCreator(movies));
+      const robots = await getRobots();
+      dispatch(loadRobotsActionCreator(robots));
     })();
   }, [dispatch, getRobots]);
   return (
     <>
       <Header />
       <div className="container">
-        <RobotCard robot={robotsMock[0]}></RobotCard>
-        <RobotCard robot={robotsMock[1]}></RobotCard>
+        <RobotList robots={robotsMock}></RobotList>
       </div>
     </>
   );

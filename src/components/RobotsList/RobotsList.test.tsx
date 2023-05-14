@@ -1,17 +1,17 @@
-import { render, screen } from "@testing-library/react";
-import { robotsMock } from "../../mocks/robotsMock";
 import { ThemeProvider } from "styled-components";
+import { robotsMock } from "../../mocks/robotsMock";
 import theme from "../../styles/theme/theme";
-import RobotCard from "./RobotCard";
+import RobotList from "./RobotsList";
+import { render, screen } from "@testing-library/react";
 
-describe("Given a RobortCard component", () => {
-  describe("When it received a robot with the name 'R2D2'", () => {
-    test("Then it should show a heading with the name 'R2D2'", () => {
+describe("Given a RobotList component", () => {
+  describe("When it is rendered", () => {
+    test("Then it should show a list of robots with one robot named 'R2D2'", () => {
       const expectedName = "R2D2";
 
       render(
         <ThemeProvider theme={theme}>
-          <RobotCard robot={robotsMock[0]} />
+          <RobotList robots={robotsMock} />
         </ThemeProvider>
       );
 

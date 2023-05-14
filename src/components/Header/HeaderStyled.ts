@@ -11,7 +11,6 @@ const HeaderStyled = styled.header`
 
   .title {
     font-size: 2rem;
-
   }
 `;
 export default HeaderStyled;

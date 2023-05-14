@@ -1,6 +1,6 @@
 import { RobotStructure } from "../types";
 
-export const robotsmock: RobotStructure[] = [
+export const robotsMock: RobotStructure[] = [
   {
     id: "645e95bb5ed61e8df4200fd9",
     name: "R2D2",

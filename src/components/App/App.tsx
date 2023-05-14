@@ -1,4 +1,4 @@
-import { robotsmock } from "../../mocks/robotsMock";
+import { robotsMock } from "../../mocks/robotsMock";
 import RobotCard from "../RobotCard/RobotCard";
 import Header from "../Header/Header";
 
@@ -7,8 +7,8 @@ const App = (): JSX.Element => {
     <>
       <Header />
       <div className="container">
-        <RobotCard robot={robotsmock[0]}></RobotCard>
-        <RobotCard robot={robotsmock[1]}></RobotCard>
+        <RobotCard robot={robotsMock[0]}></RobotCard>
+        <RobotCard robot={robotsMock[1]}></RobotCard>
       </div>
     </>
   );

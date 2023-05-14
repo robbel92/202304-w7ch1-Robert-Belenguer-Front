@@ -1,13 +1,10 @@
-
 import { robotsMock } from "../../mocks/robotsMock";
 import RobotCard from "../RobotCard/RobotCard";
 import Header from "../Header/Header";
 import { useEffect } from "react";
 import { useApi } from "../../hooks/useApi";
-import Header from "../Header/Header";
 import { useAppDispatch } from "../../store";
 import { loadRobotsActionCreator } from "../../store/robots/robotsSlice";
-
 
 const App = (): JSX.Element => {
   const { getRobots } = useApi();

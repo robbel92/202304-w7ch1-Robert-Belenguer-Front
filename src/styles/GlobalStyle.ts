@@ -43,7 +43,7 @@ const GlobalStyle = createGlobalStyle`
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  padding: 50px;
+  padding: 20px;
   
   }
 

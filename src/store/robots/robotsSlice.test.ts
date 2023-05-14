@@ -1,4 +1,4 @@
-import { robotsmock } from "../../mocks/robotsMock";
+import { robotsMock } from "../../mocks/robotsMock";
 import { RobotStructure } from "../../types";
 import {
   RobotsState,
@@ -15,11 +15,11 @@ describe("Given a loadRobots reducer", () => {
         robots: currentRobots,
       };
 
-      const loadRobotsAction = loadRobotsActionCreator(robotsmock);
+      const loadRobotsAction = loadRobotsActionCreator(robotsMock);
 
       const expectedNewRobotsState: RobotsState = {
         ...currentRobotState,
-        robots: robotsmock,
+        robots: robotsMock,
       };
 
       const newState: RobotsState = robotsReducer(

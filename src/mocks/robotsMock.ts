@@ -1,6 +1,6 @@
 import { RobotStructure } from "../types";
 
-export const robotsmock: RobotStructure[] = [
+export const robotsMock: RobotStructure[] = [
   {
     id: "645e95bb5ed61e8df4200fd9",
     name: "R2D2",
@@ -12,7 +12,7 @@ export const robotsmock: RobotStructure[] = [
   {
     id: "645f970c7ab7d5c43f43c740",
     name: "Bender",
-    image: "https://i.ibb.co/VLSdJJM/bender.webp",
+    image: "https://i.ibb.co/QvB1Yfs/bender.webp",
     speed: 0,
     strength: 0,
     creation_date: "22-08-1885",

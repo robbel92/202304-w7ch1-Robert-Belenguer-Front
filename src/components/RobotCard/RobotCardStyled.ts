@@ -2,16 +2,23 @@ import styled from "styled-components";
 
 const RobotCardStyled = styled.article`
   border-radius: 10px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   .robot-image {
     object-fit: cover;
     border-radius: 10px;
+    margin-bottom: 20px;
   }
 
   .robot-info {
-    font-family: ${(props) => props.theme.fonts.primary_title};
+    font-family: inherit;
     border: 2px solid #95969c;
     border-radius: 10px;
+    padding: 10px;
 
     &__name {
       font-weight: 800;

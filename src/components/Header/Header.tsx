@@ -7,9 +7,9 @@ const Header = (): JSX.Element => {
 
       <img
         src="favicon.ico"
-        alt="robot levantando las manos"
-        width={150}
-        height={150}
+        alt="robot raising its hands"
+        width={75}
+        height={75}
       />
     </HeaderStyled>
   );

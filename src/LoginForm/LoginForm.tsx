@@ -1,6 +1,6 @@
 import { useState } from "react";
-import LoginFormStyled from "./LoginFormStyled";
 import { User } from "../types";
+import LoginFormStyled from "./LoginFormStyled";
 
 interface LoginFormProps {
   actionOnSubmit: (user: User) => void;

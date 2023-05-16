@@ -1,7 +1,7 @@
 import Header from "../Header/Header";
 import { useEffect } from "react";
 import { useApi } from "../../hooks/useApi";
-import { useAppDispatch } from "../../store";
+import { useAppDispatch, useAppSelector } from "../../store";
 import { loadRobotsActionCreator } from "../../store/robots/robotsSlice";
 import RobotList from "../RobotsList/RobotsList";
 import { robotsMock } from "../../mocks/robotsMock";
@@ -13,15 +13,17 @@ const App = (): JSX.Element => {
 
   useEffect(() => {
     (async () => {
-      const robots = await getRobots();
-      dispatch(loadRobotsActionCreator(robots));
+      dispatch(loadRobotsActionCreator(robotsMock));
     })();
   }, [dispatch, getRobots]);
+
+  const { robots } = useAppSelector((state) => state.robotsReducer);
   return (
     <>
       <Header />
+
       <div className="container">
-        <RobotList robots={robotsMock}></RobotList>
+        <RobotList robots={robots}></RobotList>
       </div>
     </>
   );

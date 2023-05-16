@@ -6,3 +6,8 @@ export interface RobotStructure {
   strength: number;
   creation_date: string;
 }
+
+export interface User {
+  username: string;
+  password: string;
+}

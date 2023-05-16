@@ -42,7 +42,15 @@ const LoginForm = ({ actionOnSubmit }: LoginFormProps): JSX.Element => {
         onChange={onChangeInputs}
         value={userData.password}
       />
-      <button type="submit">LOGIN</button>
+      <button
+        type="submit"
+        disabled={userData.username === "" && userData.password === ""}
+        className={
+          !userData.username || !userData.password ? "makeDisabled" : ""
+        }
+      >
+        LOGIN
+      </button>
     </LoginFormStyled>
   );
 };

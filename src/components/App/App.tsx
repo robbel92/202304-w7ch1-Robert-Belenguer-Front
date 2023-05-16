@@ -5,6 +5,7 @@ import { useAppDispatch, useAppSelector } from "../../store";
 import { loadRobotsActionCreator } from "../../store/robots/robotsSlice";
 import RobotList from "../RobotsList/RobotsList";
 import { robotsMock } from "../../mocks/robotsMock";
+import LoginForm from "../../LoginForm/LoginForm";
 
 const App = (): JSX.Element => {
   const { getRobots } = useApi();
@@ -21,7 +22,7 @@ const App = (): JSX.Element => {
   return (
     <>
       <Header />
-
+      <LoginForm actionOnSubmit={() => ({})}></LoginForm>
       <div className="container">
         <RobotList robots={robots}></RobotList>
       </div>

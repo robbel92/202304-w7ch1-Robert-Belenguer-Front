@@ -46,15 +46,15 @@ describe("Given a LoginForm component", () => {
   });
 
   describe("When is rendered and the user complets form  ", () => {
-    test("Then the button appears enabled", () => {
+    test("Then the button appears enabled", async () => {
       const actionOnSubmitMock = vi.fn();
       render(<LoginForm actionOnSubmit={actionOnSubmitMock} />);
 
       const inputUserName = screen.getByLabelText("Username:");
       const inputPasswordName = screen.getByLabelText("Password:");
 
-      userEvent.type(inputUserName, "Hola");
-      userEvent.type(inputPasswordName, "Hola");
+      await userEvent.type(inputUserName, "Hola");
+      await userEvent.type(inputPasswordName, "Hola");
 
       const loginButton = screen.getByRole("button", {
         name: loginButtonText,

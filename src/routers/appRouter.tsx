@@ -1,5 +1,7 @@
-import { RouteObject, createBrowserRouter } from "react-router-dom";
+import { Navigate, RouteObject, createBrowserRouter } from "react-router-dom";
 import App from "../components/App/App";
+import LoginFormPage from "../pages/LoginFormPage/LoginFormPage";
+import RobotsPage from "../pages/RobotsPage/RobotsPage";
 
 const routes: RouteObject[] = [
   {
@@ -8,11 +10,15 @@ const routes: RouteObject[] = [
     children: [
       {
         index: true,
-        element: <App />,
+        element: <Navigate to="/login" replace />,
       },
       {
         path: "/login",
-        element: <App />,
+        element: <LoginFormPage />,
+      },
+      {
+        path: "/robots",
+        element: <RobotsPage />,
       },
     ],
   },

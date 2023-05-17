@@ -7,7 +7,7 @@ export interface RobotStructure {
   creation_date: string;
 }
 
-export interface User {
+export interface UserCreadentials {
   username: string;
   password: string;
 }

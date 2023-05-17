@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { User } from "../types";
+import { UserCreadentials } from "../types";
 import LoginFormStyled from "./LoginFormStyled";
 
 interface LoginFormProps {
-  actionOnSubmit: (user: User) => void;
+  actionOnSubmit: (user: UserCreadentials) => void;
 }
 
 const LoginForm = ({ actionOnSubmit }: LoginFormProps): JSX.Element => {

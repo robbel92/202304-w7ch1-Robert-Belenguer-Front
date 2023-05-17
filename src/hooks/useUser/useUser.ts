@@ -1,10 +1,10 @@
 import axios, { AxiosResponse } from "axios";
 import { useCallback } from "react";
 import { apiURL } from "../useApi";
-import { User } from "../../types";
+import { UserCreadentials } from "../../types";
 
 export const useUser = () => {
-  const getUserToken = useCallback(async (user: User) => {
+  const getUserToken = useCallback(async (user: UserCreadentials) => {
     const {
       data: { token },
     } = await axios.post<string, AxiosResponse<{ token: string }>>(
